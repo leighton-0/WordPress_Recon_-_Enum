@@ -1,0 +1,5 @@
+
+
+# install WPWatcher
+pip install -U 'wpwatcher'
+
