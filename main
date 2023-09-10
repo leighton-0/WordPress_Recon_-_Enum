@@ -3,7 +3,7 @@
 # install WPWatcher
 pip install -U 'wpwatcher'
 
-# install reconftw using docker
+# install reconftw using docker. ref --> https://github.com/six2dez/reconftw/wiki/4.-Docker
 mkdir reconftw
 cd reconftw
 git init -b main
