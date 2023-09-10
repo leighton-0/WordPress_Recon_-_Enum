@@ -3,3 +3,19 @@
 # install WPWatcher
 pip install -U 'wpwatcher'
 
+# install reconftw using docker
+mkdir reconftw
+cd reconftw
+git init -b main
+git remote add origin https://github.com/six2dez/reconftw.git
+git sparse-checkout set "Docker/"
+git pull --depth=1 origin main
+docker buildx build -t reconftw \
+  --build-arg COLLAB_SERVER='XXXXXXX' \
+  --build-arg XSS_SERVER='XXXXXXX' \
+  --build-arg SHODAN_API_KEY='XXXXXXX' \
+  --build-arg LANG='en_US.UTF-8' \
+  --build-arg LANGUAGE='en_US' \
+  Docker/.
+# to run example -->> docker run reconftw -d example.com -s
+
