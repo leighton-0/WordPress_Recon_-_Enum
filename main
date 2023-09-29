@@ -24,13 +24,13 @@ gem install wpscan -y                                  #install wpscan
 # Installl automap -                                   ref https://github.com/psycolulz/AutoMap/blob/main/AutoMap.sh
 curl https://raw.githubusercontent.com/psycolulz/AutoMap/main/AutoMap.sh
 
-
-
-# Install all files using
-
+# Install nmaparse                                     ref https://github.com/actuated/nmaparse
+curl https://raw.githubusercontent.com/actuated/nmaparse/master/nmaparse.sh
 
 # install WPWatcher
 pip install -U 'wpwatcher'
+
+
 
 # install reconftw using docker. ref --> https://github.com/six2dez/reconftw/wiki/4.-Docker
 mkdir reconftw
