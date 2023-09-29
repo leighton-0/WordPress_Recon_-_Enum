@@ -4,7 +4,8 @@
 ######################################################################
 ##             WP Recon & Enum Set-Up Script                ##
 #######################################################################
-# 
+# This is a script that installls a collection of tools I've collected to
+# recon & enumerate WP sites.
 
 s=2                  # Slows scritpt down so you can see whats going on
 
