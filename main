@@ -21,12 +21,6 @@ apt install build-essential libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-de
 sleep 5
 gem install wpscan -y                                  #install wpscan
 
-# Installl automap -                                   ref https://github.com/psycolulz/AutoMap/blob/main/AutoMap.sh
-curl https://raw.githubusercontent.com/psycolulz/AutoMap/main/AutoMap.sh
-
-# Install nmaparse                                     ref https://github.com/actuated/nmaparse
-curl https://raw.githubusercontent.com/actuated/nmaparse/master/nmaparse.sh
-
 # install WPWatcher
 pip install -U 'wpwatcher'
 
