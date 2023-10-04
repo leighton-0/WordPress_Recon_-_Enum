@@ -31,6 +31,9 @@ printf '============================================================\n\n'
 docker pull frapsoft/nikto
 # to run:-  docker run frapsoft/nikto -host https://target.tld
 
+# Install Gobuster
+apt install gobuster
+
 
 # install reconftw using docker. ref --> https://github.com/six2dez/reconftw/wiki/4.-Docker
 mkdir reconftw
