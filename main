@@ -24,6 +24,19 @@ gem install wpscan                                  #install wpscan
 # install WPWatcher
 pip install -U 'wpwatcher'
 
+printf '\n============================================================\n'
+printf '[+] Install Nikto\n'
+printf '============================================================\n\n'
+# Ref:- https://www.unixmen.com/install-nikto-web-scanner-check-vulnerabilities/
+wget https://cirt.net/nikto/nikto-2.1.5.tar.gz
+tar -zxvf nikto-2.1.5.tar.gz
+cd ~
+cp -apvf nikto-2.1.5/* /usr/local/bin/
+ls -l /usr/local/bin/
+ln -s /usr/local/bin/nikto.conf /etc/nikto.conf
+ls -l /etc/nikto.conf
+chmod 755 /usr/local/bin/nikto.pl
+/usr/local/bin/nikto.pl -update
 
 
 # install reconftw using docker. ref --> https://github.com/six2dez/reconftw/wiki/4.-Docker
