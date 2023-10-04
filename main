@@ -34,6 +34,9 @@ docker pull frapsoft/nikto
 # Install Gobuster
 apt install gobuster
 
+# Install SecList
+git clone https://github.com/danielmiessler/SecLists.git
+
 
 # install reconftw using docker. ref --> https://github.com/six2dez/reconftw/wiki/4.-Docker
 mkdir reconftw
