@@ -30,6 +30,9 @@ printf '============================================================\n\n'
 # Ref:- https://github.com/ellerbrock/nikto-docker
 docker pull frapsoft/nikto
 # to run:-  docker run frapsoft/nikto -host https://target.tld
+# add to .bash_aliases file
+printf "alias nikto='docker run frapsoft/nikto -host https://'" >> ~/.bash_aliases
+. ~/.bashrc      # same as source ~/.bashrc --> reloads aliases
 
 # Install Gobuster
 apt install gobuster
