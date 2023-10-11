@@ -40,7 +40,7 @@ apt install gobuster
 # Install SecList
 git clone https://github.com/danielmiessler/SecLists.git
 
-if (1 == 0); then
+#if (1 == 0); then
 # not installed for the time being!!
 # install reconftw using docker. ref --> https://github.com/six2dez/reconftw/wiki/4.-Docker
 mkdir reconftw
@@ -51,12 +51,12 @@ git sparse-checkout set "Docker/"
 git pull --depth=1 origin main
 docker buildx build -t reconftw \
   --build-arg COLLAB_SERVER='XXXXXXX' \
-  --build-arg XSS_SERVER='XXXXXXX' \
-  --build-arg SHODAN_API_KEY='XXXXXXX' \
+  --build-arg XSS_SERVER='xss.cbay.au' \
+  --build-arg SHODAN_API_KEY='xxxxxxx' \
   --build-arg LANG='en_US.UTF-8' \
   --build-arg LANGUAGE='en_US' \
   Docker/.
 # to run example -->> docker run reconftw -d example.com -s
-else
+#else
 
 
